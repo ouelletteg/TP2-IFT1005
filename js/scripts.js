@@ -33,9 +33,7 @@ var updateDocumentTitle = function() {
 };
 
 var createArticles =function() {
-  $(".carousel-item").forEach(function(article, i) {
-     var articleHTML = '<img src="assets/placeholder.png" class="d-block w-100" alt="...">';
-     articleHTML += '<h1>'+data.articles[i] + '</h1>'
-     article.innerHTML
+  Array.from($(".carousel-item h5")).forEach(function(titre, i) {
+    titre.innerHTML = data.articles[i].title;
   });
 };
