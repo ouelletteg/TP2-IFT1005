@@ -2,6 +2,7 @@
 // js / scripts.js
 // ======================================================
 
+
 // When document is ready
 // ======================================================
 
@@ -13,7 +14,7 @@
 var dynamicActions = function(data) {
   $(document).ready(function() {
     updateDocumentTitle();
-    // function2()...
+    createArticles();
     // function3()...
     // function4()...
     // etc.
@@ -28,6 +29,13 @@ var dynamicActions = function(data) {
  * from my aunt.
  */
 var updateDocumentTitle = function() {
-  // Some code...
-  document.title = "Lilou";
+  document.title = data.documentTitle;
+};
+
+var createArticles =function() {
+  $(".carousel-item").forEach(function(article, i) {
+     var articleHTML = '<img src="assets/placeholder.png" class="d-block w-100" alt="...">';
+     articleHTML += '<h1>'+data.articles[i] + '</h1>'
+     article.innerHTML
+  });
 };
