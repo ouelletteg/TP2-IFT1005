@@ -34,10 +34,10 @@ body {
 /* Articles                                     */
 /*==============================================*/
 
-/** 
- * This section should contain at least the
- * following elements: h1, h2, section, article.
- */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	filter: invert(100%);
+}
 
 /*==============================================*/
 /* Recipes                                      */

@@ -15,11 +15,29 @@ var dynamicActions = function(data) {
   $(document).ready(function() {
     updateDocumentTitle();
     createArticles();
-    // function3()...
+    createRecipes();
     // function4()...
     // etc.
   });
 };
+
+// Arrays of photos
+
+//var articlesPhotos = METTRE UN TABLEAU ICI
+var recettesPhotos = [
+  ['assets/lasagna.jpg', 'Image by RitaE from Pixabay'],
+  ['assets/tofu-tao.jpg', 'Image by Frank Zhang from Pixabay'],
+  ['assets/burger-vege.jpg','Image by Julia Nowak from Pixabay'],
+  ['assets/mac-and-cheese.jpg', 'Photo by Hermes Rivera on Unsplash'],
+  ['assets/saute-legumes.jpg', 'Photo by Clem Onojeghuo on Unsplash'],
+  ['assets/salade-fruits.jpg', 'Image by silviarita from Pixabay'],
+  ['assets/soupe-tofu.jpg', 'Image by jyleen21 from Pixabay'],
+  ['assets/saumon-riz.jpg', 'Image by susumu kawakita from Pixabay'],
+  ['assets/saute-legumes.jpg', 'Photo by Clem Onojeghuo on Unsplash'],
+  ['assets/salade-fruits.jpg', 'Image by silviarita from Pixabay'],
+  ['assets/soupe-tofu.jpg', 'Image by jyleen21 from Pixabay'],
+  ['assets/saumon-riz.jpg', 'Image by susumu kawakita from Pixabay']
+];
 
 // My functions
 // ======================================================
@@ -32,7 +50,7 @@ var updateDocumentTitle = function() {
   document.title = data.documentTitle;
 };
 
-var createArticles =function() {
+var createArticles = function() {
   Array.from($(".article h1")).forEach(function(titre, i) {
     titre.innerHTML = data.articles[i].title;
   });
@@ -43,3 +61,17 @@ var createArticles =function() {
     texte.innerHTML = data.articles[i].content;
   });
 };
+
+var createRecipes = function() {
+  Array.from($("#recettes .card img")).forEach(function(image, i) {
+    image.src = recettesPhotos[i][0];
+    image.alt = data.recipes[i].description;
+    image.title = recettesPhotos[i][1];
+  });
+  Array.from($(".card-title")).forEach(function(description, i) {
+    description.innerHTML = data.recipes[i].description;
+  });
+  Array.from($("#recettes .card p")).forEach(function(prix, i) {
+    prix.innerHTML = data.recipes[i].price;
+  });
+}
