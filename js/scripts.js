@@ -22,6 +22,9 @@ var dynamicActions = function(data) {
 };
 
 // Arrays of photos
+['assets/trophé.png','Image by Quimono from pixabay'],
+['assets/VEGAN.png','Image by Gellinger from pixabay']
+['assets/Passion.jpg','Image by Rawpixel from  pixabay']
 
 //var articlesPhotos = METTRE UN TABLEAU ICI
 var recettesPhotos = [
