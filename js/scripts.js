@@ -36,10 +36,10 @@ var recettesPhotos = [
   ['assets/salade-fruits.jpg', 'Image by silviarita from Pixabay'],
   ['assets/soupe-tofu.jpg', 'Image by jyleen21 from Pixabay'],
   ['assets/saumon-riz.jpg', 'Image by susumu kawakita from Pixabay'],
-  ['assets/saute-legumes.jpg', 'Photo by Clem Onojeghuo on Unsplash'],
-  ['assets/salade-fruits.jpg', 'Image by silviarita from Pixabay'],
-  ['assets/soupe-tofu.jpg', 'Image by jyleen21 from Pixabay'],
-  ['assets/saumon-riz.jpg', 'Image by susumu kawakita from Pixabay']
+  ['assets/quinoa-croquettes.jpg', 'Photo by ORNELLA BINNI on Unsplash'],
+  ['assets/poutine.jpg', 'Image by 0x010C on Wikipedia Commons.'],
+  ['assets/tofu-beurre.jpg', 'Image by Devanath from Pixabay'],
+  ['assets/boulettes_energie.jpg', 'Image by Karolina Grabowska from Pixabay']
 ];
 
 // My functions
