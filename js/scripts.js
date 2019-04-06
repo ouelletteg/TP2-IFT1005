@@ -22,11 +22,13 @@ var dynamicActions = function(data) {
 };
 
 // Arrays of photos
-['assets/trophé.png','Image by Quimono from pixabay'],
-['assets/VEGAN.png','Image by Gellinger from pixabay']
-['assets/Passion.jpg','Image by Rawpixel from  pixabay']
 
-//var articlesPhotos = METTRE UN TABLEAU ICI
+
+var articlesPhotos = [
+['assets/trophé.png','Image by Quimono from pixabay'],
+['assets/VEGAN.png','Image by Gellinger from pixabay'],
+['assets/Passion.jpg','Image by Rawpixel from  pixabay']
+]
 var recettesPhotos = [
   ['assets/lasagna.jpg', 'Image by RitaE from Pixabay'],
   ['assets/tofu-tao.jpg', 'Image by Frank Zhang from Pixabay'],
@@ -64,6 +66,10 @@ var createArticles = function() {
     texte.innerHTML = data.articles[i].content;
   });
 };
+//moi
+
+    
+    //
 
 var createRecipes = function() {
   Array.from($("#recettes .card img")).forEach(function(image, i) {
@@ -77,4 +83,7 @@ var createRecipes = function() {
   Array.from($("#recettes .card p")).forEach(function(prix, i) {
     prix.innerHTML = data.recipes[i].price;
   });
+
+
+
 }
