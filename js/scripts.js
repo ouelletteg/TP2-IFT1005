@@ -33,7 +33,13 @@ var updateDocumentTitle = function() {
 };
 
 var createArticles =function() {
-  Array.from($(".carousel-item h5")).forEach(function(titre, i) {
+  Array.from($(".article h1")).forEach(function(titre, i) {
     titre.innerHTML = data.articles[i].title;
+  });
+  Array.from($(".article h3")).forEach(function(sousTitre, i) {
+    sousTitre.innerHTML = data.articles[i].subtitle;
+  });
+  Array.from($(".article p")).forEach(function(texte, i) {
+    texte.innerHTML = data.articles[i].content;
   });
 };
