@@ -47,6 +47,14 @@ body {
  * This section should contain at least the
  * following elements: h1, ul, li, p.
  */
+ .card {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+ .card-img-top:hover {
+	 transform: scale(1.1);
+ }
 
 /*==============================================*/
 /* Contact                                      */
@@ -65,3 +73,8 @@ body {
  * This section should contain at least the
  * following elements: p.
  */
+
+ /*** Ici en attendant que le javascript se libère
+ galettes quinoa
+ Photo by ORNELLA BINNI on Unsplash
+ 
