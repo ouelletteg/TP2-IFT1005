@@ -3,17 +3,25 @@
 /*==============================================*/
 
 :root,
-body, 
-header, 
-footer, 
-section, 
-article, 
-div, 
-ul, ol, li, 
-p, a, span,
-label, input, button {
+body,
+header,
+footer,
+section,
+article,
+div,
+ul,
+ol,
+li,
+p,
+a,
+span,
+label,
+input,
+button {
 	font-family: 'Roboto', arial;
-};
+}
+
+;
 
 body {
 	font-size: 1rem;
@@ -47,14 +55,14 @@ body {
  * This section should contain at least the
  * following elements: h1, ul, li, p.
  */
- .card {
+.card {
 	overflow: hidden;
 	margin-bottom: 20px;
 }
 
- .card-img-top:hover {
-	 transform: scale(1.1);
- }
+.card-img-top:hover {
+	transform: scale(1.1);
+}
 
 /*==============================================*/
 /* Contact                                      */
@@ -73,5 +81,3 @@ body {
  * This section should contain at least the
  * following elements: p.
  */
-
- /***Photo by Jessica Castro on Unsplash***/
