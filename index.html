@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,700" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 
   <!-- My CSS -->
   <!-- ================================= -->
@@ -44,17 +45,39 @@
 <body>
   <!---Barre de navigation-->
   <header class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <a class="navbar-brand" href="#">CHEZ<br>TANTE<br>SYLVIE</a>
+    <svg>
+      <style>
+        .small {
+          font: italic 13px sans-serif;
+        }
+
+        .recette {
+          font: bold 40px sans-serif;
+          fill: rgb(49, 92, 187);
+        }
+
+        .italique {
+          font-family: 'Dancing Script', cursive;
+          font-size: 40px;
+          fill: lightblue;
+        }
+      </style>
+      <text x="20" y="35" class="small">Les</text>
+      <text x="20" y="60" class="recette">recettes</text>
+      <text x="20" y="85" class="recette">magiques</text>
+      <text x="50" y="100" class="small">de</text>
+      <text x="65" y="125" class="italique">Sylvie!</text>
+    </svg>
     <nav>
       <ul class="navbar-nav">
         <li class="nav-item"></li>
-        <a class="nav-link" href="#">Accueil</a>
+        <a class="nav-link" href="#articles">Accueil</a>
         </li>
         <li class="nav-item"></li>
-        <a class="nav-link" href="#">Recettes</a>
+        <a class="nav-link" href="#recettes">Recettes</a>
         </li>
         <li class="nav-item"></li>
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
@@ -64,7 +87,7 @@
   <section>
     <div id="articles" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner container">
-        <div class="carousel-item active article row">
+        <article class="carousel-item active article row">
           <div class="row">
             <div class="col d-none d-md-block">
               <img src="assets/VEGAN.png" class="d-block w-100" alt="...">
@@ -75,8 +98,8 @@
               <p></p>
             </div>
           </div>
-        </div>
-        <div class="carousel-item article row">
+        </article>
+        <article class="carousel-item article row">
           <div class="row">
             <div class="col d-none d-md-block">
               <img src="assets/Passion .jpg" class="d-block w-100" alt="...">
@@ -87,8 +110,8 @@
               <p></p>
             </div>
           </div>
-        </div>
-        <div class="carousel-item article row">
+        </article>
+        <article class="carousel-item article row">
           <div class="row">
             <div class="col d-none d-md-block">
               <img src="assets/trophé.png" class="d-block w-100" alt="...">
@@ -99,7 +122,7 @@
               <p></p>
             </div>
           </div>
-        </div>
+        </article>
       </div>
       <a class="carousel-control-prev" href="#articles" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -240,8 +263,52 @@
     </div>
   </section>
 
-  <footer>
+  <footer id="contact" class="bg-dark text-white">
+    <br>
+    <h2>CONTACT</h2>
+    <form action="http://www.iro.umontreal.ca/~lapalme/ift1005/Exercices/9/echoValeurs.cgi" method="post">
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="name">Nom:</label>
+          <input type="text" id="name" name="firstname" class="form-control" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="adress">Adresse:</label>
+          <input type="text" name="lastname" class="form-control" id="adress" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-1 mb-3">
+          <label for="codPos">Code postal:</label>
+          <input type="text" required pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" title="LCL CLC"
+            class="form-control" id="codPos">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-2 mb-3">
 
+          Ville:<br><input type="text" name="name" class="form-control" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-2 mb-3">
+          Numéro de téléphone:<br> <input type="text" required pattern="[514|438|450]{3}[ -][0-9]{3}[ -][0-9]{4}"
+            title="YYYXXXXXXX  YYY=514 OU 438 OU 450" class="form-control">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          Message:<br><textarea name="message" rows="10" cols="30" class="form-control" required></textarea>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <input type="submit" value="Submit" class="btn bg-white text-dark">
+        </div>
+      </div>
+    </form>
   </footer>
 </body>
 
