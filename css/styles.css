@@ -18,17 +18,13 @@ span,
 label,
 input,
 button {
-	font-family: 'Roboto', arial;
+  font-family: "Roboto", arial;
 }
-
-;
 
 body {
-	font-size: 1rem;
-	font-weight: 300;
+  font-size: 1rem;
+  font-weight: 300;
 }
-
-
 
 /*==============================================*/
 /* Navigation                                   */
@@ -38,6 +34,25 @@ body {
  * This section should contain at least the
  * following elements: header, nav, ul, li, a, div.
  */
+/*** Logo ***/
+.logoSmallText {
+  font: italic 13px sans-serif;
+}
+
+.logoBigText {
+  font: bold 40px sans-serif;
+  fill: rgb(49, 92, 187);
+}
+
+.logoItalTexte {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  fill: lightblue;
+}
+
+.nav-link {
+  font-size: 2rem;
+}
 
 /*==============================================*/
 /* Articles                                     */
@@ -45,7 +60,7 @@ body {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-	filter: invert(100%);
+  filter: invert(100%);
 }
 
 /*==============================================*/
@@ -57,12 +72,12 @@ body {
  * following elements: h1, ul, li, p.
  */
 .card {
-	overflow: hidden;
-	margin-bottom: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .card-img-top:hover {
-	transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /*==============================================*/
