@@ -26,6 +26,11 @@
       href="https://fonts.googleapis.com/css?family=Dancing+Script"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
 
     <!-- My CSS -->
     <!-- ================================= -->
@@ -54,6 +59,7 @@
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
 
     <!-- My Scripts -->
     <script src="./js/scripts.js"></script>
@@ -66,33 +72,17 @@
     <header class="navbar navbar-expand-sm bg-dark navbar-dark">
       <!---Logo-->
       <svg>
-        <style>
-          .small {
-            font: italic 13px sans-serif;
-          }
-
-          .recette {
-            font: bold 40px sans-serif;
-            fill: rgb(49, 92, 187);
-          }
-
-          .italique {
-            font-family: "Dancing Script", cursive;
-            font-size: 40px;
-            fill: lightblue;
-          }
-        </style>
-        <text x="20" y="35" class="small">Les</text>
-        <text x="20" y="60" class="recette">recettes</text>
-        <text x="20" y="85" class="recette">magiques</text>
-        <text x="50" y="100" class="small">de</text>
-        <text x="65" y="125" class="italique">Sylvie!</text>
+        <text x="20" y="35" class="logoSmallText">Les</text>
+        <text x="20" y="60" class="logoBigText">recettes</text>
+        <text x="20" y="85" class="logoBigText">magiques</text>
+        <text x="50" y="100" class="logoSmallText">de</text>
+        <text x="65" y="125" class="logoItalTexte">Sylvie!</text>
       </svg>
       <!---Navigation-->
       <nav>
         <ul>
           <li>
-            <a href="#articles">Accueil</a>
+            <a href="#accueil">Accueil</a>
           </li>
           <li>
             <a href="#recettes">Recettes</a>
@@ -105,74 +95,52 @@
     </header>
 
     <!---Articles-->
-    <section>
-      <div id="articles" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner container">
-          <!---Article 1-->
-          <article class="active">
-            <div>
-              <div>
-                <img src="assets/VEGAN.png" alt="..." />
-              </div>
-              <div>
-                <h1></h1>
-                <h3></h3>
-                <p></p>
-              </div>
-            </div>
-          </article>
-          <!---Article 2-->
-          <article>
-            <div>
-              <div>
-                <h1></h1>
-                <h3></h3>
-                <p></p>
-              </div>
-              <div>
-                <img src="assets/Passion .jpg" alt="..." />
-              </div>
-            </div>
-          </article>
-          <!---Article 3-->
-          <article>
-            <div>
-              <div>
-                <img src="assets/trophé.png" alt="..." />
-              </div>
-              <div>
-                <h1></h1>
-                <h3></h3>
-                <p></p>
-              </div>
-            </div>
-          </article>
+    <section id="accueil">
+      <!---Article 1-->
+      <article>
+        <div>
+          <div>
+            <img src="assets/VEGAN.png" alt="..." />
+          </div>
+          <div>
+            <h1></h1>
+            <h3></h3>
+            <p></p>
+          </div>
         </div>
-        <a
-          class="carousel-control-prev"
-          href="#articles"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#articles"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
+      </article>
+      <!---Article 2-->
+      <article>
+        <div>
+          <div>
+            <h1></h1>
+            <h3></h3>
+            <p></p>
+          </div>
+          <div>
+            <img src="assets/Passion .jpg" alt="..." />
+          </div>
+        </div>
+      </article>
+      <!---Article 3-->
+      <article>
+        <div>
+          <div>
+            <img src="assets/trophé.png" alt="..." />
+          </div>
+          <div>
+            <h1></h1>
+            <h3></h3>
+            <p></p>
+          </div>
+        </div>
+      </article>
     </section>
 
     <!---Recettes-->
     <section id="recettes">
-      <div>
-        <div></div>
+      <div class="container">
+        <div class="row"></div>
       </div>
     </section>
 
