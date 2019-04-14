@@ -26,11 +26,6 @@
       href="https://fonts.googleapis.com/css?family=Dancing+Script"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
 
     <!-- My CSS -->
     <!-- ================================= -->
@@ -59,13 +54,11 @@
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
 
     <!-- My Scripts -->
     <script src="./js/scripts.js"></script>
     <script src="./js/_data_.js"></script>
     <title>Document</title>
-  </head>
 
   <body>
     <!---Barre de navigation-->
@@ -95,46 +88,29 @@
     </header>
 
     <!---Articles-->
-    <section id="accueil">
-      <!---Article 1-->
-      <article>
-        <div>
-          <div>
-            <img src="assets/VEGAN.png" alt="..." />
-          </div>
-          <div>
-            <h1></h1>
-            <h3></h3>
-            <p></p>
-          </div>
+    <section>
+      <div id="accueil" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner container">
+          <a
+            class="carousel-control-prev"
+            href="#accueil"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#accueil"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-      </article>
-      <!---Article 2-->
-      <article>
-        <div>
-          <div>
-            <h1></h1>
-            <h3></h3>
-            <p></p>
-          </div>
-          <div>
-            <img src="assets/Passion .jpg" alt="..." />
-          </div>
-        </div>
-      </article>
-      <!---Article 3-->
-      <article>
-        <div>
-          <div>
-            <img src="assets/trophé.png" alt="..." />
-          </div>
-          <div>
-            <h1></h1>
-            <h3></h3>
-            <p></p>
-          </div>
-        </div>
-      </article>
+      </div>
     </section>
 
     <!---Recettes-->
