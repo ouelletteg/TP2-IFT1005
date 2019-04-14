@@ -153,7 +153,7 @@
           </div>
         </div>
         <div class="form-row">
-          <div class="col-md-1 mb-3">
+          <div class="col-md-2 mb-3">
             <label for="codPos">Code postal:</label>
             <input
               type="text"
@@ -167,33 +167,38 @@
         </div>
         <div class="form-row">
           <div class="col-md-2 mb-3">
-            Ville:<br /><input
+            <label for="ville">Ville:</label>
+            <input
               type="text"
               name="name"
               class="form-control"
+              id="ville"
               required
             />
           </div>
         </div>
         <div class="form-row">
           <div class="col-md-2 mb-3">
-            Numéro de téléphone:<br />
+            <label for="tel">Numéro de téléphone:</label>
             <input
               type="text"
               required
               pattern="[514|438|450]{3}[ -][0-9]{3}[ -][0-9]{4}"
               title="YYYXXXXXXX  YYY=514 OU 438 OU 450"
               class="form-control"
+              id="tel"
             />
           </div>
         </div>
         <div class="form-row">
           <div class="col-md-4 mb-3">
-            Message:<br /><textarea
+            <label for="message">Message:</label>
+            <textarea
               name="message"
               rows="10"
               cols="30"
               class="form-control"
+              id="message"
               required
             ></textarea>
           </div>
