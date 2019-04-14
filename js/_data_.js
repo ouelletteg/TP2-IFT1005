@@ -56,8 +56,8 @@ if (data === null) {
 
 var articlesPhotos = [
   ["assets/trophé.png", "Image by Quimono from pixabay"],
-  ["assets/VEGAN.png", "Image by Gellinger from pixabay"],
-  ["assets/Passion.jpg", "Image by Rawpixel from  pixabay"]
+  ["assets/vegan.png", "Image by Gellinger from pixabay"],
+  ["assets/Passion .jpg", "Image by Rawpixel from  pixabay"]
 ];
 
 var recettesPhotos = [
