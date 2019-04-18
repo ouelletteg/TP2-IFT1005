@@ -1,3 +1,7 @@
+/* Travail pratique #2 pour le cours IFT1005 
+** Par Bashir Alla(20074355) et Geneviève Ouellette(20141307)
+*/
+
 /*==============================================*/
 /* Fonts                                        */
 /*==============================================*/
@@ -35,6 +39,13 @@ body {
  * following elements: header, nav, ul, li, a, div.
  */
 /*** Logo ***/
+
+svg {
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+}
+
 .logoSmallText {
   font: italic 13px sans-serif;
 }
@@ -84,10 +95,9 @@ body {
 /* Contact                                      */
 /*==============================================*/
 
-/** 
- * This section should contain at least the
- * following elements: h1, label, input.
- */
+footer {
+  padding-left: 50px;
+}
 
 /*==============================================*/
 /* Footer                                       */
